@@ -1,0 +1,37 @@
+Code:
+
+# Module # 2 Introduction to basic R functions and Data Structures - assignment
+
+assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
+# Define the myMean function
+
+myMean <- function(assignment2) {
+  
+  return(sum(assignment2)/length(assignment2))
+  
+}  
+
+
+
+MeanTest <- myMean(assignment2)
+
+
+print(MeanTest)
+
+OUTPUT:
+
+> assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
+> myMean <- function(assignment2) {
++   
++   return(sum(assignment2)/length(assignment2))
++   
++ }  
+> MeanTest <- myMean(assignment2)
+> print(MeanTest)
+[1] 19.25
+
+Explanation:
+
+The function correctly calculates the mean of a set of values by adhering to the standard formula. 
+It takes a numeric vector as input, sums its values, and divides the sum by the count of values. 
+Designed to handle any numeric vector with valid data, it provides a simple and effective method for calculating the mean in R.
