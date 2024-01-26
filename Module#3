@@ -1,1 +1,38 @@
+ Module #3
+
+Jonathan Poland II
+
+
+
+CODE:
+
+Name <- c("Jeb","Donald","Ted","Marco","Carly","Hillary","Berine")
+
+
+
+ABC_political_poll_results <- c(4,62,51,21,2,14,15)
+
+CBS_political_poll_results <- c(12,75,43,19,1,21,19)
+
+
+
+ABC <- sum(ABC_political_poll_results)
+
+CBS <- sum(CBS_political_poll_results)
+
+
+
+Data <- data.frame(Name, ABC_political_poll_results, CBS_political_poll_results)
+
+
+Data Frame: 
+
+
+
+In analyzing the political poll results from CBS and ABC, The dataset underscores that Donald, Ted, and Hillary garnered more substantial support across both networks. 
+Interestingly, CBS exhibits a higher level of participant engagement in the poll, suggesting a broader sampling of public opinion. 
+This increased involvement may contribute to CBS presenting a more nuanced and comprehensive portrayal of political preferences. 
+Overall, the dataset sheds light on the divergent perspectives captured by CBS and ABC, providing valuable insights into the dynamic landscape of political preferences among their respective audiences.
+
+
 
