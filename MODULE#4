@@ -1,0 +1,55 @@
+ 
+
+MODULE#4
+
+Jonathan Poland II
+
+CODE:
+
+
+
+library(ggplot2)
+
+
+
+Frequency <- c(0.6,0.3,0.4,0.4,0.2,0.6,0.3,0.4,0.9,0.2)
+
+BP <- c(103,87,32,42,59,109,78,205,135,176)
+
+First <- c(1,1,1,1,0,0,0,0,2,1)
+
+Second <- c(0,0,1,1,0,0,1,1,1,1)
+
+FinalDecision <- c(0,1,0,1,0,1,0,1,1,1)
+
+
+
+Important <- data.frame( BP, FinalDecision, Frequency)
+
+
+
+# Plot histogram
+
+ggplot(Important, aes(BP)) +
+
+  # Add a histogram layer
+
+  geom_histogram()
+
+
+
+
+# Plot Boxplot
+
+ggplot(Important, aes(BP)) +
+
+  # Add a bar layer
+
+  geom_boxplot()
+
+
+Analysis:
+I am not too sure if this was done correctly but based off of my data, code and the graphics I can make somewhat of an analysis. 
+Looking at the numbers, it seems that understanding high blood pressure is kind of tricky – there's a lot of variation and it's not as clear-cut. On the other hand, when it comes to low blood pressure, things are simpler and more obvious.
+Lower values follow a more predictable pattern, making them easier to figure out. 
+This difference in how we interpret high and low blood pressure shows that understanding high blood pressure readings is a bit more complicated, while low blood pressure readings are more straightforward.
