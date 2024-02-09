@@ -1,0 +1,97 @@
+ Module #5
+LIS4370
+
+
+
+Code:
+
+
+
+A = matrix(1:100, nrow=10)
+
+B = matrix(1:1000, nrow=10)
+
+#Transpose A and B  given a matrix or data.frame x, t returns the transpose of x. 
+
+AA <- t(A)
+
+BB <- t(B)
+
+#create two vectors (a and b)
+
+VA <- c(AA)
+
+VB <- c(BB)
+
+#multiply matrices by vectors
+
+C <- AA*VA
+
+D <- BB*VB
+
+#re-assign the vectors a and b to equal the number of rows of the column for the corresponding matrix
+
+A2 <- matrix(C, nrow = 10, ncol = 10)
+
+B2 <- matrix(D, nrow = 10, ncol = 10)
+
+#Multiply the matrix by a matrix
+
+E <- A2%*%B2 
+
+#Inverse a matrix
+
+ solve(E, tol = 1.71584e-20)
+
+#check det()
+
+det(S)
+
+
+
+
+
+
+
+
+Output:
+
+> A = matrix(1:100, nrow=10)
+> B = matrix(1:1000, nrow=10)
+> #Transpose A and B  given a matrix or data.frame x, t returns the transpose of x. 
+> AA <- t(A)
+> BB <- t(B)
+> #create two vectors (a and b)
+> VA <- c(AA)
+> VB <- c(BB)
+> #multiply matrices by vectors
+> C <- AA*VA
+> D <- BB*VB
+> #re-assign the vectors a and b to equal the number of rows of the column for the corresponding matrix
+> A2 <- matrix(C, nrow = 10, ncol = 10)
+> B2 <- matrix(D, nrow = 10, ncol = 10)
+Warning message:
+In matrix(D, nrow = 10, ncol = 10) :
+  data length differs from size of matrix: [1000 != 10 x 10]
+> #Multiply the matrix by a matrix
+> E <- A2%*%B2 
+> #Inverse a matrix
+>  solve(E)
+Error in solve.default(E) : 
+  system is computationally singular: reciprocal condition number = 1.71584e-20
+> #Inverse a matrix
+>  solve(E, tol = 1.71584e-20)
+             [,1]        [,2]        [,3]        [,4]        [,5]       [,6]        [,7]        [,8]        [,9]       [,10]
+ [1,] -16484846.1  22801909.5  1070672.01  -645851.17 -2756606.27 -3467415.4 -2986373.02  -465677.09 -128092.110  3062279.61
+ [2,]  47659579.6 -68326987.3  -161941.18  2800585.99  7920597.19  9926374.7  5906552.97  2318875.03  343860.627 -8387497.64
+ [3,] -37951496.3  56704678.0 -2380928.87 -3498338.64 -6751621.43 -7093282.9 -2052578.76 -2768883.23 -590681.939  6383134.05
+ [4,]  -3198414.9   4419806.4   -95293.01   514801.80   -51843.37 -2105029.5  -444817.07   150544.22  718220.450    92024.93
+ [5,]   5241000.2  -8053571.4   -31833.15  1133733.44  1321281.65  1622204.4  -887321.57   202408.45 -158077.371  -389824.70
+ [6,]  10513901.0 -17084991.7  2907790.10   495138.62  1957005.24  1807765.8   -33807.81  1073437.40 -332078.386 -1304160.25
+ [7,]  -2376225.1   3406954.3   976114.06 -1250672.21 -1458084.55   392213.3   253111.93  -120699.09    5258.267   172029.09
+ [8,]  -4420854.3   8016368.0 -2637689.45    21169.36  -557789.27  -822435.2   219082.02  -378352.86  171701.584   388800.11
+ [9,]   -352279.1    301353.1  -227216.52   867988.52    72492.13  -794957.5    36226.33   -67978.06  -13082.727   177453.70
+[10,]   1369635.0  -2185518.9   580325.99  -438555.71   304568.68   534562.1   -10075.03    56325.21  -17028.395  -194238.90
+> #check det()
+> det(S)
+[1] 5.569584e+51
