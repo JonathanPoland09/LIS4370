@@ -1,0 +1,10 @@
+Package: Poland
+Type: Package
+Title: Creating a package
+Version: 0.1.0
+Author: Jonathan Poland II
+Maintainer: Jonathan Poland II <poland1@usf.edu>
+Description: This package is the intitial creation of a package
+License: CC0
+Encoding: UTF-8
+LazyData: true
