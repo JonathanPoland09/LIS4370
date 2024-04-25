@@ -1,0 +1,10 @@
+Package: CreditCard
+Type: Package
+Title: Credit Card Spending Factors
+Version: 0.1.0
+Author: Jonathan C Poland II
+Maintainer:  <poland1@usf.edu>
+Description: This package is where the data will be stored
+License: CCO
+Encoding: UTF-8
+LazyData: true
